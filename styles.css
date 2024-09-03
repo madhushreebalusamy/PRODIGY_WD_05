@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://imgs.search.brave.com/hq3Oqz3npiDxDuQa07uRpZYvb9Hidc6DaVgf3f9jrTc/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTQz/MTAyMTgxOS9waG90/by9oaWtlci1vbi10/b3Atb2YtdGhlLW1v/dW50YWluLXVzaW5n/LXNtYXJ0cGhvbmUt/YXBwLmpwZz9zPTYx/Mng2MTImdz0wJms9/MjAmYz1ab2libVhF/WnhiWnlsOHRNWWdP/R09Jb3Nhd1pKaFRR/N0ItTkxMR1ZiV1JR/PQ');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.container {
+    text-align: center;
+}
+
+.weather-card {
+    background: linear-gradient(to right, #d8dfd9, #b3d9f8);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    width: 450px;
+}
+
+.weather-card:hover {
+    transform: scale(1.05);
+}
+
+#city-input {
+    padding: 15px;
+    margin: 10px 0;
+    width: 70%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#city-input:focus {
+    outline: none;
+    border-color: #2196F3;
+}
+
+#city-input::placeholder {
+    color: #aaa;
+}
+
+#city-input-btn {
+    padding: 10px;
+    background-color: #2196F3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#city-input-btn:hover {
+    background-color: #1565C0;
+}
+
+#weather-info {
+    display: none;
+}
+
+#weather-icon {
+    width: 100px;
+    height: 100px;
+}
+
+#temperature {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 8px 0;
+}
+
+#description {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#wind-speed {
+    font-size: 16px;
+    color: rgb(255, 0, 0);
+}
+
+#date {
+    font-size: 14px;
+    color: rgb(255, 0, 0);
+}
